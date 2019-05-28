@@ -1,4 +1,11 @@
 # aws-smtp-relay
+
+> This is a fork from https://github.com/loopingz/aws-smtp-relay
+>
+> Differences include:
+> - reorganization so you can run maven inside docker instead of using maven as a docker wrapper -- this way you don't need java or maven on your host.
+> - a Makefile to make building, testing, and running the application easier (subjective since we ditched maven as the docker build wrapper).
+
 ![logo](https://raw.githubusercontent.com/8llouch/aws-smtp-relay/master/docs/aws-smtp-relay-logo.png)
 
 Local SMTP server that convert SMTP message to AWS SES API Call to allow you to use **AWS Role Instance**.

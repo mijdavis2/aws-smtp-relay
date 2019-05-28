@@ -104,19 +104,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>1.4.9</version>
-                <configuration>
-                    <repository>nuxeo/aws-smtp-relay</repository>
-                    <tag>${project.version}</tag>
-                    <buildArgs>
-                        <JAR_FILE>${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar</JAR_FILE>
-                        <IMAGE_VERSION>${project.version}</IMAGE_VERSION>
-                    </buildArgs>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>jdeb</artifactId>
                 <groupId>org.vafer</groupId>
                 <version>1.7</version>
